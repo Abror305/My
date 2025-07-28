@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind dark mode config
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
+
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-lg px-6 py-4 flex justify-between items-center sticky top-0 z-30">
+    <div class="text-xl font-bold text-blue-600 dark:text-blue-400">Abror.dev</div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+      <a href="login.html" class="hover:text-blue-500 dark:hover:text-blue-300">Exit</a>
+      <button id="theme-toggle" class="ml-4 px-2 py-1 border rounded dark:border-white border-gray-700 text-sm">Toggle Theme</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="p-10">
+    <h1 class="text-3xl font-bold text-center text-blue-600 dark:text-blue-400 mb-10">My Projects</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Cards -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/92a58bd548532a387bb8dc5abd53f8b2.jpg" alt="Portfolio" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Portfolio Website</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">My personal developer portfolio made with HTML, CSS, and TailwindCSS.</p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/517d88c58c657329b3b30582dabce377 (1).jpg" alt="Weather App" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Weather App</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">An app showing real-time weather using OpenWeatherMap API.</p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/9b4beaa3-b5e2-428b-9d3b-b1af2ba1d51d (1).png" alt="Todo List" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Todo List</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Simple todo list built using JavaScript and localStorage.</p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/1a51ae3ac6a55acacb01d4e310338ce3.jpg" alt="Calculator" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Calculator</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">A fully functional calculator with basic operations.</p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/2a18e7204749f477fee5bc6a1600c701 (1).jpg" alt="Blog Template" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Blog Template</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">A responsive blog layout using Tailwind and HTML structure.</p>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="images/diploma (1).png" alt="Landing Page" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2 dark:text-white">Landing Page</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300">A landing page concept with modern design principles.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+<script src="project.js"></script>
+
+</body>
+</html>
